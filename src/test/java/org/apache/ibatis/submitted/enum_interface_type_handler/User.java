@@ -13,22 +13,26 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-package org.apache.ibatis.annotations;
+package org.apache.ibatis.submitted.enum_interface_type_handler;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+public class User {
 
-/**
- * The marker annotation that indicate a constructor for automatic mapping.
- *
- * @author Tim Chen
- * @since 3.4.3
- */
-@Documented
-@Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.CONSTRUCTOR})
-public @interface AutomapConstructor {
+  private Integer id;
+  private Color color;
+
+  public Integer getId() {
+    return id;
+  }
+
+  public void setId(Integer id) {
+    this.id = id;
+  }
+
+  public Color getColor() {
+    return color;
+  }
+
+  public void setColor(Color color) {
+    this.color = color;
+  }
 }
